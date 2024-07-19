@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="12dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <com.hamiddev.nikeshop.custom.NikeIconBadge
+        android:id="@+id/toolbarIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="12dp"
+        app:nike_badge_number="1"
+        android:visibility="gone"
+        android:background="?selectableItemBackgroundBorderless"
+        app:nike_icon="@drawable/ic_round_chat_bubble_outline_24"
+        app:nike_show_badge="true" />
+
+
+    <TextView
+        android:id="@+id/toolbarTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="12dp"
+        android:textAppearance="?textAppearanceHeadline6"
+        tools:text="نام صفحه" />
+</FrameLayout>

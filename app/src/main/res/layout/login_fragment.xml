@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <io.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:elevation="5dp"
+        app:shape_arc_height="50dp"
+        app:shape_arc_position="bottom">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="?colorPrimary"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_nike_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="?selectableItemBackgroundBorderless"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </io.github.florent37.shapeofview.shapes.ArcView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/signIn"
+            android:textAppearance="?textAppearanceHeadline5"
+            android:textColor="?colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:src="@drawable/ic_round_done_24"
+            android:translationZ="1dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/et_email"
+            app:layout_constraintRight_toRightOf="@id/et_email"
+            app:layout_constraintTop_toTopOf="@id/et_email" />
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:src="@drawable/ic_round_done_24"
+            android:translationZ="1dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/et_password"
+            app:layout_constraintRight_toRightOf="@id/et_password"
+            app:layout_constraintTop_toTopOf="@id/et_password" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:paddingBottom="12dp"
+            android:text="@string/email"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintRight_toRightOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@id/t1" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/et_background"
+            android:gravity="left|center_vertical"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintTop_toBottomOf="@id/email_tv" />
+
+        <TextView
+            android:id="@+id/pass_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="4dp"
+            android:paddingBottom="12dp"
+            android:text="@string/password"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintRight_toRightOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/et_background"
+            android:gravity="left|center_vertical"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAppearance="?textAppearanceBody1"
+            android:textDirection="ltr"
+            app:layout_constraintTop_toBottomOf="@id/pass_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/password_helper"
+            android:textAppearance="?textAppearanceSubtitle1"
+            android:textColor="@color/light_black"
+            app:layout_constraintRight_toRightOf="@id/et_password"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/loginTitle"
+            android:textColor="?colorPrimary"
+            app:backgroundTint="@color/gray"
+            android:outlineProvider="none"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toTopOf="@id/t2"
+            app:strokeColor="?colorPrimary"
+            app:strokeWidth="1dp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateTint="?colorOnPrimary"
+            android:translationZ="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/btn_log_in"
+            app:layout_constraintEnd_toEndOf="@id/btn_log_in"
+            app:layout_constraintStart_toStartOf="@id/btn_log_in"
+            app:layout_constraintTop_toTopOf="@id/btn_log_in" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/signUpHint"
+            android:textAppearance="?textAppearanceBody2"
+            android:textColor="@color/darkGray"
+            app:layout_constraintBottom_toTopOf="@id/btn_sign_up_helper" />
+
+        <TextView
+            android:id="@+id/btn_sign_up_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/signUp"
+            android:textAppearance="?textAppearanceBody1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

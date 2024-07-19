@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    app:startDestination="@id/proFileFragment">
+
+    <fragment
+        android:id="@+id/proFileFragment"
+        android:name="com.hamiddev.nikeshop.ui.profile.ProFileFragment"
+        android:label="ProFileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_proFileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_proFileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_proFileFragment_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+        <action
+            android:id="@+id/action_proFileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.hamiddev.nikeshop.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/favorite_fragment">
+        <action
+            android:id="@+id/action_favoriteFragment_to_productDetailFragment3"
+            app:destination="@id/productDetailFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment1"
+        android:name="com.hamiddev.nikeshop.ui.detail.ProductDetailFragment"
+        android:label="ProductDetailFragment"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="product"
+            app:argType="com.hamiddev.nikeshop.data.model.Product" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hamiddev.nikeshop.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/proFileFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.hamiddev.nikeshop.ui.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/signup_fragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/proFileFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.hamiddev.nikeshop.ui.orderHistory.OrderHistoryFragment"
+        tools:layout="@layout/order_history_fragment"
+        android:label="OrderHistoryFragment" >
+        <action
+            android:id="@+id/action_orderHistoryFragment_to_orderHistoryDetailFragment"
+            app:destination="@id/orderHistoryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryDetailFragment"
+        tools:layout="@layout/order_history_detail_fragment"
+        android:name="com.hamiddev.nikeshop.ui.historyDetail.OrderHistoryDetailFragment"
+        android:label="OrderHistoryDetailFragment" >
+        <argument
+            android:name="order"
+            app:argType="com.hamiddev.nikeshop.data.model.OrderHistoryItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        tools:layout="@layout/edit_profile_fragment"
+        android:name="com.hamiddev.nikeshop.ui.editProfile.EditProfileFragment"
+        android:label="EditProfileFragment" />
+</navigation>

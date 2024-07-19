@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Nike</string>
+    <string name="searchTapTitle">جست جو</string>
+    <string name="cartTapTitle">سبد خرید</string>
+    <string name="proFileTapTitle">اطلاعات کاربری</string>
+    <string name="homeTapTitle">خانه</string>
+    <string name="home">خانه</string>
+    <string name="cart">سبد خرید</string>
+    <string name="profile">اطلاعات کاربری</string>
+    <string name="latest">جدید ترین</string>
+    <string name="best_selling">پرفروش ترین</string>
+    <string name="viewAll">مشاهده همه</string>
+    <string name="comments">نظرات کاربران</string>
+    <string name="insertComment">ثبت نظر</string>
+    <string name="viewAllComment">مشاهده همه نظرات</string>
+    <string name="productList">لیست محصولات</string>
+    <string name="sort">مرتب سازی</string>
+    <string name="sortLatest">جدید ترین</string>
+    <string name="sortPopular">پربازدید ترین</string>
+    <string name="sortPriceHighToLow">گران ترین</string>
+    <string name="sortPriceLowToHigh">ارزان ترین</string>
+    <string name="addToCart">افزودن به سبد خرید</string>
+    <string name="unknownError">خطای نامشخص</string>
+    <string name="successAddToCart">به سبد خرید اضافه شد</string>
+    <string name="successAddToCartNotification">محصول شما به سبد خرید اضافه شد</string>
+    <string name="successAddToCartContentNotification">سبد خرید خود را مشاهده کنید</string>
+
+    <string-array name="sortTitlesArray">
+        <item>@string/sortLatest</item>
+        <item>@string/sortPopular</item>
+        <item>@string/sortPriceHighToLow</item>
+        <item>@string/sortPriceLowToHigh</item>
+    </string-array>
+
+    <string name="loginScreenTitle">ورود به حساب کاربری</string>
+    <string name="loginTitle">ورود</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="signUpHint">حساب کاربری ندارید؟</string>
+    <string name="signUp">ثبت نام</string>
+    <string name="authHint">ایمیل و رمز عبور خود را وارد کنید</string>
+    <string name="signUpScreenTitle">ایجاد حساب کاربری</string>
+    <string name="loginHint">قبلا ثبت نام کردید؟</string>
+    <string name="pay">پرداخت</string>
+    <string name="count">تعداد</string>
+    <string name="removeFromCart">حذف از سبد خرید</string>
+    <string name="purchaseDetail">جزییات خرید</string>
+    <string name="totalPrice">مبلغ کل خرید</string>
+    <string name="shippingCost">هزینه ارسال</string>
+    <string name="payablePrice">مبلغ قابل پرداخت</string>
+
+    <string name="cartEmptyStateLoginRequired">وارد حساب کاربری خود شوید</string>
+    <string name="cartEmptyStateCallToAction">ورود به حساب کاربری</string>
+    <string name="cartEmpty">هیچ خبری اینجا نیست</string>
+
+
+    <string name="cartEmptyState">هیچ خبری اینجا نیست!</string>
+    <string name="shippingToolbarTitle">انتخاب تحویل گیرنده و شیوه پرداخت</string>
+    <string name="onlinePayment">پرداخت اینترنتی</string>
+    <string name="cashOnDelivery">پرذاخت در محل</string>
+
+
+    <string name="firstName">نام</string>
+    <string name="lastName">نام خانوادگی</string>
+    <string name="postalCode">کد پستی</string>
+    <string name="phoneNumber">شماره موبایل</string>
+    <string name="address">آدرس</string>
+    <string name="checkoutToolbarTitle">رسید پرداخت</string>
+    <string name="returnHome">بازگشت به صفحه اصلی</string>
+    <string name="orderHistory">سوابق سفارش</string>
+    <string name="purchaseStatus">وضعیت سفارش</string>
+    <string name="price">مبلغ</string>
+
+    <string name="no_product_found">هیچ محصولی پیدا نشد</string>
+    <string name="should_login">برای دسترسی به این بخش باید وارد حساب کاربری شوید</string>
+    <string name="no_product_cart">هنوز محصولی به سبد خرید اضافه نکرده اید</string>
+
+    <string name="favorites">لیست علاقه مندی ها</string>
+    <string name="signIn">ورود به حساب کاربری</string>
+    <string name="signOut">خروج از حساب کاربری</string>
+    <string name="guest_user">کاربر مهمان</string>
+    <string name="favorites_empty_state_message">هنوز محصولی به لیست علاقه مندی اضافه نکردی</string>
+    <string name="favorites_help_message">برای حذف محصول انگشت خود را روی آن نگه دارید</string>
+
+    <string name="add_favorite_product_successful">آیتم به لیست علاقه مندی ها اضافه شد</string>
+    <string name="remove_favorite_product_successful">آیتم از  لیست علاقه مندی ها حذف شد</string>
+    <string name="test">نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند</string>
+    <string name="field_should_not_empty">فیلد نباید خالی باشد</string>
+    <string name="no_favorite_product">هنوز محصولی به لیست علاقه مندی ها اضافه نکردید</string>
+    <string name="password_helper">رمز عبور باید بیشتر از 8 رقم باشد</string>
+    <string name="password_or_user_not_correct">رمز عبور یا نام کاربری اشتباه میباشد</string>
+    <string name="you_are_out">شما از حساب خود خارج شدید</string>
+    <string name="order_id_text">کد سفارش</string>
+    <string name="orderHistoryDetail">جزئیات سفارش</string>
+    <string name="no_history_product">هیچ خریدی شما تا به حال انجام نداده اید</string>
+    <string name="saveInformation">ذخیره اطلاعات</string>
+    <string name="editProfile">ویرایش اطلاعات</string>
+    <string name="intro_product_title">محصولات متنوع</string>
+    <string name="intro_product_description">بیش از 100 مدل از تمامی محصولات نایک \n با کیفیت و قیمت فوق العاده</string>
+    <string name="intro_product_cost_title">قیمت مناسب</string>
+    <string name="intro_product_cost_description">تمامی محصولات دارای تخفیف هستند \n پس از خرید خود لذت ببرید</string>
+    <string name="intro_product_post_title">ارسال با پست</string>
+    <string name="intro_product_post_description">تمامی محصولات با پست پیشتاز ارسال میشود و همچنین تمامی محصولات بیمه میشوند</string>
+    <string name="intro_product_corona_title">خیالت از کرونا راحت</string>
+    <string name="intro_product_corona_description">تمامی بسته ها ضد عفونی میشوند و پروتکل بهداشتی رعایت میشوند</string>
+    <string name="enter">ورود</string>
+    <string name="no_internet_connection">دسترسی به اینترنت وجود ندارد</string>
+
+    <string name="successful_buy">خرید با موفقیت انجام شد</string>
+    <string name="failed_buy">خرید ناموفق</string>
+</resources>

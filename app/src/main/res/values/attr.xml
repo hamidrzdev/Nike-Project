@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dividerColor" format="color"/>
+    <attr name="windowBackgroundColorSub" format="color"/>
+    <declare-styleable name="NikeToolbar">
+        <attr name="nt_title" format="string"/>
+        <attr name="nt_show_back" format="boolean"/>
+        <attr name="nt_custom_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NikeHomeItem">
+        <attr name="nike_show_more_text" format="string"/>
+        <attr name="nike_label_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="NikeIconBadge">
+        <attr name="nike_show_badge" format="boolean"/>
+        <attr name="nike_badge_number" format="integer"/>
+        <attr name="nike_icon" format="reference"/>
+    </declare-styleable>
+</resources>

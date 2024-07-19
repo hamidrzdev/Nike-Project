@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart"
+    app:startDestination="@id/cartFragment">
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.hamiddev.nikeshop.ui.cart.CartFragment"
+        android:label="CartFragment"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_productDetailFragment3"
+            app:destination="@id/productDetailFragment3" />
+        <action
+            android:id="@+id/action_cartFragment_to_shippingFragment"
+            app:destination="@id/shippingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hamiddev.nikeshop.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/cartFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.hamiddev.nikeshop.ui.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/signup_fragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/cartFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment3"
+        android:name="com.hamiddev.nikeshop.ui.detail.ProductDetailFragment"
+        android:label="ProductDetailFragment"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="product"
+            app:argType="com.hamiddev.nikeshop.data.model.Product" />
+    </fragment>
+    <fragment
+        android:id="@+id/shippingFragment"
+        android:name="com.hamiddev.nikeshop.ui.shipping.ShippingFragment"
+        android:label="ShippingFragment"
+        tools:layout="@layout/fragment_shipping">
+        <argument
+            android:name="purchase"
+            app:argType="com.hamiddev.nikeshop.data.model.PurchaseDetail" />
+        <action
+            android:id="@+id/action_shippingFragment_to_checkOutFragment2"
+            app:destination="@id/checkOutFragment"
+            app:popUpTo="@id/cartFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.hamiddev.nikeshop.ui.checkOut.CheckOutFragment"
+        android:label="CheckOutFragment"
+        tools:layout="@layout/fragment_check_out">
+        <argument
+            android:name="order"
+            app:argType="integer" />
+        <deepLink app:uri="nike://expertdevelopers.ir/appCheckout?order_id={order}" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_orderHistoryFragment2"
+            app:popUpTo="@id/cartFragment"
+            app:popUpToInclusive="false"
+            app:destination="@id/orderHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.hamiddev.nikeshop.ui.orderHistory.OrderHistoryFragment"
+        tools:layout="@layout/order_history_fragment"
+        android:label="OrderHistoryFragment" >
+        <action
+            android:id="@+id/action_orderHistoryFragment_to_orderHistoryDetailFragment"
+            app:destination="@id/orderHistoryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryDetailFragment"
+        tools:layout="@layout/order_history_detail_fragment"
+        android:name="com.hamiddev.nikeshop.ui.historyDetail.OrderHistoryDetailFragment"
+        android:label="OrderHistoryDetailFragment" >
+        <argument
+            android:name="order"
+            app:argType="com.hamiddev.nikeshop.data.model.OrderHistoryItem" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?colorOnPrimary">
+
+        <com.hamiddev.nikeshop.custom.NikeToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:nt_title="@string/orderHistoryDetail" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="36dp"
+        android:clipToPadding="false"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp">
+
+                    <TextView
+                        android:id="@+id/b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="نام"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_toLeftOf="@id/b1"
+                        android:gravity="left"
+                        android:layout_marginRight="24dp"
+                        tools:text="حمیدرضا" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="نام خانوادگی"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b2"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="کرمانی" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="شماره تلفن"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b3"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="0935 937 1390" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="آدرس"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_below="@id/b5"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="@string/test" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="کد پستی"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_post_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b6"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="03241584586" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="روش پرداخت"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_payment_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b7"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="پرداخت اینترنتی" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="روش پرداخت"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_payment_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b8"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="پرداخت با موفقعیت آمیر بود" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?dividerColor"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/f1"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/b10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="هزینه ارسال"
+                        android:textAppearance="?textAppearanceBody1"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/darkGray" />
+
+                    <TextView
+                        android:id="@+id/tv_full_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/b10"
+                        android:layout_marginRight="24dp"
+                        android:textAppearance="?textAppearanceBody1"
+                        tools:text="135050 تومان" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/product_rv"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layoutDirection="rtl"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
